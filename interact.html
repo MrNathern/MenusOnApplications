@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<nav>
+    <button id="btn">Home</button>
+    <button id="btn2">About</button>
+    <button id="btn3">Interact</button>
+</nav>
+
+<h1>Interact</h1>
+
+<button id="btn4">Click Here!</button>
+
+<p> Count: <span id="display">0</span></p>
+
+<script type="text/javascript">
+    var count = 0;
+    var btn = document.getElementById("btn4");
+    var disp = document.getElementById("display");
+
+    btn.onclick = function () {
+        count++;
+        disp.innerHTML= count;
+    }
+</body>
+</html>
